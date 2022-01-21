@@ -12,13 +12,13 @@ var docClient = new AWS.DynamoDB.DocumentClient();
 var table = "MISPanel";
 
 var appID = "60ba619cdc52f500d37e810f";
-var appIDid = 10;
+var loopCount = 5001;
 
 var params = {
     TableName: table,
     Key: {
-        "appId": appID,
-        "appIdid": appIDid
+        "app": appID,
+        "loopCount": loopCount
     }
 };
 
